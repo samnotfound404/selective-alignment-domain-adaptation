@@ -9,6 +9,7 @@ venv/
 # Datasets, image caches and checkpoints are never committed
 /data/*
 !/data/README.md
+!/data/splits/
 cache_low_resource/
 cache_*/
 *.pt

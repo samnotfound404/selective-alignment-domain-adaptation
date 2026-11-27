@@ -46,3 +46,14 @@ The splits are deterministic (`random_state=42`) and built by `build_datasets_wi
   - the low-label budgets are nested stratified subsets of the pool: 50 ⊂ 100 ⊂ 200 ⊂ 1,608.
 
 The extended study (`src/train_cc_satda_v2.py`) uses its own split, where AKIEC = ACK only, giving 1,474 / 316 / 316 images. Its numbers are therefore **not** directly comparable to the main table.
+
+## Split files (included)
+
+`data/splits/` lists exactly which images went into each split used in the main benchmark. Each file is a CSV with the columns `image,label`; the label is the shared 5-class name. The files were generated with `build_datasets_with_nested_subsets`, so they can be used to check a rebuilt split against ours.
+
+| File | Images |
+|---|---|
+| `isic2018_train.csv` / `isic2018_val.csv` / `isic2018_test.csv` | 8,294 / 1,464 / 1,433 |
+| `pad_train_full_1608.csv` | 1,608 |
+| `pad_train_200.csv` / `pad_train_100.csv` / `pad_train_50.csv` | 200 / 100 / 50 (nested) |
+| `pad_val_345.csv` / `pad_test_345.csv` | 345 / 345 |
