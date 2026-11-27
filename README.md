@@ -8,7 +8,7 @@ CC-SAT-DA is a supervised domain adaptation method. It transfers a skin-lesion c
 2. **Prior calibration at test time.** Each class's score is adjusted for how common that disease is in the target clinic.
 
 B.Tech Project, Department of Computer Science and Engineering, IIT Indore.
-**Authors:** Sameer Choudhary, Hardik Bansal. **Supervisor:** Prof. Nagendra Kumar.
+**Authors:** Sameer, Hardik. **Supervisor:** Prof. Nagendra Kumar.
 
 ---
 
@@ -188,9 +188,9 @@ python experiments/extended_v2/supervised_matched.py --n 200 --out sup_200.json
 ## Citation
 
 ```bibtex
-@misc{choudhary2026ccsatda,
+@misc{ccsatda2026,
   title  = {CC-SAT-DA: Class-Conditional Domain Adaptation for Skin-Lesion Diagnosis},
-  author = {Choudhary, Sameer and Bansal, Hardik},
+  author = {Sameer and Hardik},
   year   = {2026},
   note   = {B.Tech Project, Indian Institute of Technology Indore},
   url    = {https://github.com/samnotfound404/selective-alignment-domain-adaptation}
