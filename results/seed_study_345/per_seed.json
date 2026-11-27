@@ -1,0 +1,1562 @@
+[
+ {
+  "method": "cc",
+  "n": "100",
+  "seed": 1011,
+  "report": {
+   "accuracy": 0.5884057971014492,
+   "f1_macro": 0.5141125009681125,
+   "auroc_macro_ovr": 0.8499307962780742,
+   "mel_found": 3,
+   "mel_total": 8,
+   "mel_pred": 9,
+   "melanoma_recall": 0.375
+  },
+  "safety": {
+   "accuracy": 0.48405797101449277,
+   "f1_macro": 0.41845340027646855,
+   "auroc_macro_ovr": 0.8334969456380652,
+   "mel_found": 6,
+   "mel_total": 8,
+   "mel_pred": 83,
+   "melanoma_recall": 0.75
+  },
+  "tau": 0.05,
+  "delta": 1.7,
+  "minutes": 17.907599771022795
+ },
+ {
+  "method": "cc",
+  "n": "100",
+  "seed": 123,
+  "report": {
+   "accuracy": 0.6086956521739131,
+   "f1_macro": 0.5352630412871376,
+   "auroc_macro_ovr": 0.859221768043622,
+   "mel_found": 2,
+   "mel_total": 8,
+   "mel_pred": 3,
+   "melanoma_recall": 0.25
+  },
+  "safety": {
+   "accuracy": 0.5855072463768116,
+   "f1_macro": 0.5049047014940828,
+   "auroc_macro_ovr": 0.8630246383076537,
+   "mel_found": 5,
+   "mel_total": 8,
+   "mel_pred": 21,
+   "melanoma_recall": 0.625
+  },
+  "tau": 0.5,
+  "delta": 2.0,
+  "minutes": 15.575001513957977
+ },
+ {
+  "method": "cc",
+  "n": "100",
+  "seed": 42,
+  "report": {
+   "accuracy": 0.6028985507246377,
+   "f1_macro": 0.5695328385365286,
+   "auroc_macro_ovr": 0.8659273336809825,
+   "mel_found": 4,
+   "mel_total": 8,
+   "mel_pred": 8,
+   "melanoma_recall": 0.5
+  },
+  "safety": {
+   "accuracy": 0.4,
+   "f1_macro": 0.3940093562009671,
+   "auroc_macro_ovr": 0.8524350868217108,
+   "mel_found": 8,
+   "mel_total": 8,
+   "mel_pred": 140,
+   "melanoma_recall": 1.0
+  },
+  "tau": 0.1,
+  "delta": 2.8,
+  "minutes": 17.29616436560949
+ },
+ {
+  "method": "cc",
+  "n": "100",
+  "seed": 456,
+  "report": {
+   "accuracy": 0.6231884057971014,
+   "f1_macro": 0.5666324374741073,
+   "auroc_macro_ovr": 0.863918123779993,
+   "mel_found": 3,
+   "mel_total": 8,
+   "mel_pred": 4,
+   "melanoma_recall": 0.375
+  },
+  "safety": {
+   "accuracy": 0.5739130434782609,
+   "f1_macro": 0.479449133650626,
+   "auroc_macro_ovr": 0.8628088506613801,
+   "mel_found": 5,
+   "mel_total": 8,
+   "mel_pred": 38,
+   "melanoma_recall": 0.625
+  },
+  "tau": 0.4,
+  "delta": 1.8,
+  "minutes": 17.911754123369853
+ },
+ {
+  "method": "cc",
+  "n": "100",
+  "seed": 789,
+  "report": {
+   "accuracy": 0.5942028985507246,
+   "f1_macro": 0.5277248432789577,
+   "auroc_macro_ovr": 0.8457013076620312,
+   "mel_found": 3,
+   "mel_total": 8,
+   "mel_pred": 7,
+   "melanoma_recall": 0.375
+  },
+  "safety": {
+   "accuracy": 0.5594202898550724,
+   "f1_macro": 0.4597091088376679,
+   "auroc_macro_ovr": 0.8450795275468606,
+   "mel_found": 6,
+   "mel_total": 8,
+   "mel_pred": 52,
+   "melanoma_recall": 0.75
+  },
+  "tau": 0.5,
+  "delta": 2.8,
+  "minutes": 15.972720925013224
+ },
+ {
+  "method": "cc",
+  "n": "200",
+  "seed": 1011,
+  "report": {
+   "accuracy": 0.6666666666666666,
+   "f1_macro": 0.6237585940368577,
+   "auroc_macro_ovr": 0.8858878320939418,
+   "mel_found": 3,
+   "mel_total": 8,
+   "mel_pred": 5,
+   "melanoma_recall": 0.375
+  },
+  "safety": {
+   "accuracy": 0.672463768115942,
+   "f1_macro": 0.652358473534944,
+   "auroc_macro_ovr": 0.8860849234824336,
+   "mel_found": 5,
+   "mel_total": 8,
+   "mel_pred": 9,
+   "melanoma_recall": 0.625
+  },
+  "tau": 0.35,
+  "delta": 1.1,
+  "minutes": 15.814332246780396
+ },
+ {
+  "method": "cc",
+  "n": "200",
+  "seed": 123,
+  "report": {
+   "accuracy": 0.672463768115942,
+   "f1_macro": 0.6612298041792534,
+   "auroc_macro_ovr": 0.8763916385440685,
+   "mel_found": 6,
+   "mel_total": 8,
+   "mel_pred": 11,
+   "melanoma_recall": 0.75
+  },
+  "safety": {
+   "accuracy": 0.5333333333333333,
+   "f1_macro": 0.50815819189948,
+   "auroc_macro_ovr": 0.8595308120566635,
+   "mel_found": 7,
+   "mel_total": 8,
+   "mel_pred": 82,
+   "melanoma_recall": 0.875
+  },
+  "tau": 0.0,
+  "delta": 2.1,
+  "minutes": 19.111007118225096
+ },
+ {
+  "method": "cc",
+  "n": "200",
+  "seed": 42,
+  "report": {
+   "accuracy": 0.6782608695652174,
+   "f1_macro": 0.6670892392100256,
+   "auroc_macro_ovr": 0.8921320796514539,
+   "mel_found": 4,
+   "mel_total": 8,
+   "mel_pred": 4,
+   "melanoma_recall": 0.5
+  },
+  "safety": {
+   "accuracy": 0.6086956521739131,
+   "f1_macro": 0.5521786854606229,
+   "auroc_macro_ovr": 0.8764684305628633,
+   "mel_found": 6,
+   "mel_total": 8,
+   "mel_pred": 43,
+   "melanoma_recall": 0.75
+  },
+  "tau": 0.0,
+  "delta": 1.5,
+  "minutes": 17.782901910940804
+ },
+ {
+  "method": "cc",
+  "n": "200",
+  "seed": 456,
+  "report": {
+   "accuracy": 0.6666666666666666,
+   "f1_macro": 0.6427623825584877,
+   "auroc_macro_ovr": 0.8863721538217566,
+   "mel_found": 4,
+   "mel_total": 8,
+   "mel_pred": 7,
+   "melanoma_recall": 0.5
+  },
+  "safety": {
+   "accuracy": 0.5043478260869565,
+   "f1_macro": 0.49758994383994376,
+   "auroc_macro_ovr": 0.8739752387452684,
+   "mel_found": 7,
+   "mel_total": 8,
+   "mel_pred": 103,
+   "melanoma_recall": 0.875
+  },
+  "tau": 0.15,
+  "delta": 2.9,
+  "minutes": 17.153033745288848
+ },
+ {
+  "method": "cc",
+  "n": "200",
+  "seed": 789,
+  "report": {
+   "accuracy": 0.6753623188405797,
+   "f1_macro": 0.6092837594808038,
+   "auroc_macro_ovr": 0.8834738037590594,
+   "mel_found": 2,
+   "mel_total": 8,
+   "mel_pred": 4,
+   "melanoma_recall": 0.25
+  },
+  "safety": {
+   "accuracy": 0.6434782608695652,
+   "f1_macro": 0.5900336095913596,
+   "auroc_macro_ovr": 0.8690183159215568,
+   "mel_found": 5,
+   "mel_total": 8,
+   "mel_pred": 32,
+   "melanoma_recall": 0.625
+  },
+  "tau": 0.05,
+  "delta": 1.7,
+  "minutes": 17.277147626876832
+ },
+ {
+  "method": "cc",
+  "n": "50",
+  "seed": 1011,
+  "report": {
+   "accuracy": 0.5797101449275363,
+   "f1_macro": 0.42962522298119704,
+   "auroc_macro_ovr": 0.8282495179233802,
+   "mel_found": 0,
+   "mel_total": 8,
+   "mel_pred": 1,
+   "melanoma_recall": 0.0
+  },
+  "safety": {
+   "accuracy": 0.5246376811594203,
+   "f1_macro": 0.43895421535421714,
+   "auroc_macro_ovr": 0.8248637208729901,
+   "mel_found": 5,
+   "mel_total": 8,
+   "mel_pred": 54,
+   "melanoma_recall": 0.625
+  },
+  "tau": 0.3,
+  "delta": 2.1,
+  "minutes": 12.225469426314037
+ },
+ {
+  "method": "cc",
+  "n": "50",
+  "seed": 123,
+  "report": {
+   "accuracy": 0.5971014492753624,
+   "f1_macro": 0.5227103119585144,
+   "auroc_macro_ovr": 0.8467839617017667,
+   "mel_found": 3,
+   "mel_total": 8,
+   "mel_pred": 10,
+   "melanoma_recall": 0.375
+  },
+  "safety": {
+   "accuracy": 0.5565217391304348,
+   "f1_macro": 0.47663012398671994,
+   "auroc_macro_ovr": 0.8432167495362275,
+   "mel_found": 4,
+   "mel_total": 8,
+   "mel_pred": 34,
+   "melanoma_recall": 0.5
+  },
+  "tau": 0.2,
+  "delta": 1.2,
+  "minutes": 18.580116732915243
+ },
+ {
+  "method": "cc",
+  "n": "50",
+  "seed": 42,
+  "report": {
+   "accuracy": 0.5884057971014492,
+   "f1_macro": 0.47863607714258594,
+   "auroc_macro_ovr": 0.8403412063936464,
+   "mel_found": 1,
+   "mel_total": 8,
+   "mel_pred": 3,
+   "melanoma_recall": 0.125
+  },
+  "safety": {
+   "accuracy": 0.5623188405797102,
+   "f1_macro": 0.4810011172113923,
+   "auroc_macro_ovr": 0.8373682423725051,
+   "mel_found": 3,
+   "mel_total": 8,
+   "mel_pred": 16,
+   "melanoma_recall": 0.375
+  },
+  "tau": 0.15,
+  "delta": 0.7,
+  "minutes": 16.492263547579448
+ },
+ {
+  "method": "cc",
+  "n": "50",
+  "seed": 456,
+  "report": {
+   "accuracy": 0.5768115942028985,
+   "f1_macro": 0.5060162980740597,
+   "auroc_macro_ovr": 0.8336885669737585,
+   "mel_found": 2,
+   "mel_total": 8,
+   "mel_pred": 6,
+   "melanoma_recall": 0.25
+  },
+  "safety": {
+   "accuracy": 0.5681159420289855,
+   "f1_macro": 0.4962553106589568,
+   "auroc_macro_ovr": 0.8332754528571262,
+   "mel_found": 5,
+   "mel_total": 8,
+   "mel_pred": 26,
+   "melanoma_recall": 0.625
+  },
+  "tau": 0.5,
+  "delta": 1.6,
+  "minutes": 18.98890555302302
+ },
+ {
+  "method": "cc",
+  "n": "50",
+  "seed": 789,
+  "report": {
+   "accuracy": 0.5623188405797102,
+   "f1_macro": 0.490981154967831,
+   "auroc_macro_ovr": 0.8262145636015724,
+   "mel_found": 2,
+   "mel_total": 8,
+   "mel_pred": 2,
+   "melanoma_recall": 0.25
+  },
+  "safety": {
+   "accuracy": 0.5246376811594203,
+   "f1_macro": 0.4356194253955447,
+   "auroc_macro_ovr": 0.8200972665368423,
+   "mel_found": 4,
+   "mel_total": 8,
+   "mel_pred": 28,
+   "melanoma_recall": 0.5
+  },
+  "tau": 0.1,
+  "delta": 1.1,
+  "minutes": 16.33467494249344
+ },
+ {
+  "method": "cc",
+  "n": "full",
+  "seed": 1011,
+  "report": {
+   "accuracy": 0.744927536231884,
+   "f1_macro": 0.7557080323126908,
+   "auroc_macro_ovr": 0.9392113207276356,
+   "mel_found": 6,
+   "mel_total": 8,
+   "mel_pred": 7,
+   "melanoma_recall": 0.75
+  },
+  "safety": {
+   "accuracy": 0.7304347826086957,
+   "f1_macro": 0.6871741445237355,
+   "auroc_macro_ovr": 0.937789095548746,
+   "mel_found": 7,
+   "mel_total": 8,
+   "mel_pred": 19,
+   "melanoma_recall": 0.875
+  },
+  "tau": 0.45,
+  "delta": 2.5,
+  "minutes": 19.717295281092326
+ },
+ {
+  "method": "cc",
+  "n": "full",
+  "seed": 123,
+  "report": {
+   "accuracy": 0.7101449275362319,
+   "f1_macro": 0.7358334956815378,
+   "auroc_macro_ovr": 0.9345750009803714,
+   "mel_found": 8,
+   "mel_total": 8,
+   "mel_pred": 10,
+   "melanoma_recall": 1.0
+  },
+  "safety": {
+   "accuracy": 0.7043478260869566,
+   "f1_macro": 0.6613457259892292,
+   "auroc_macro_ovr": 0.9289468155416982,
+   "mel_found": 8,
+   "mel_total": 8,
+   "mel_pred": 26,
+   "melanoma_recall": 1.0
+  },
+  "tau": 0.2,
+  "delta": 2.1,
+  "minutes": 19.431695600350697
+ },
+ {
+  "method": "cc",
+  "n": "full",
+  "seed": 42,
+  "report": {
+   "accuracy": 0.7420289855072464,
+   "f1_macro": 0.7520488497608888,
+   "auroc_macro_ovr": 0.9400557076925657,
+   "mel_found": 7,
+   "mel_total": 8,
+   "mel_pred": 9,
+   "melanoma_recall": 0.875
+  },
+  "safety": {
+   "accuracy": 0.736231884057971,
+   "f1_macro": 0.7143619047619046,
+   "auroc_macro_ovr": 0.937963262708816,
+   "mel_found": 8,
+   "mel_total": 8,
+   "mel_pred": 17,
+   "melanoma_recall": 1.0
+  },
+  "tau": 0.45,
+  "delta": 1.8,
+  "minutes": 23.201411636670432
+ },
+ {
+  "method": "cc",
+  "n": "full",
+  "seed": 456,
+  "report": {
+   "accuracy": 0.736231884057971,
+   "f1_macro": 0.7692360230193217,
+   "auroc_macro_ovr": 0.9371515362607921,
+   "mel_found": 6,
+   "mel_total": 8,
+   "mel_pred": 6,
+   "melanoma_recall": 0.75
+  },
+  "safety": {
+   "accuracy": 0.6985507246376812,
+   "f1_macro": 0.6598568990884014,
+   "auroc_macro_ovr": 0.9328712271072067,
+   "mel_found": 8,
+   "mel_total": 8,
+   "mel_pred": 34,
+   "melanoma_recall": 1.0
+  },
+  "tau": 0.2,
+  "delta": 2.3,
+  "minutes": 19.543227056662243
+ },
+ {
+  "method": "cc",
+  "n": "full",
+  "seed": 789,
+  "report": {
+   "accuracy": 0.7246376811594203,
+   "f1_macro": 0.7352778866920985,
+   "auroc_macro_ovr": 0.9364861147772622,
+   "mel_found": 6,
+   "mel_total": 8,
+   "mel_pred": 7,
+   "melanoma_recall": 0.75
+  },
+  "safety": {
+   "accuracy": 0.7188405797101449,
+   "f1_macro": 0.6919774530527218,
+   "auroc_macro_ovr": 0.9355428984628957,
+   "mel_found": 7,
+   "mel_total": 8,
+   "mel_pred": 18,
+   "melanoma_recall": 0.875
+  },
+  "tau": 0.45,
+  "delta": 2.2,
+  "minutes": 26.615515915552773
+ },
+ {
+  "method": "satda",
+  "n": "100",
+  "seed": 1011,
+  "report": {
+   "accuracy": 0.5826086956521739,
+   "f1_macro": 0.4983092488468818,
+   "auroc_macro_ovr": 0.8207469785031781,
+   "mel_found": 3,
+   "mel_total": 8,
+   "mel_pred": 11,
+   "melanoma_recall": 0.375
+  },
+  "safety": {
+   "accuracy": 0.5420289855072464,
+   "f1_macro": 0.4410795652169745,
+   "auroc_macro_ovr": 0.8282575593136808,
+   "mel_found": 3,
+   "mel_total": 8,
+   "mel_pred": 41,
+   "melanoma_recall": 0.375
+  },
+  "tau": 0.15,
+  "delta": 1.6,
+  "minutes": 15.979074478149414
+ },
+ {
+  "method": "satda",
+  "n": "100",
+  "seed": 123,
+  "report": {
+   "accuracy": 0.5623188405797102,
+   "f1_macro": 0.4713003185514049,
+   "auroc_macro_ovr": 0.8280883153712468,
+   "mel_found": 3,
+   "mel_total": 8,
+   "mel_pred": 20,
+   "melanoma_recall": 0.375
+  },
+  "safety": {
+   "accuracy": 0.5159420289855072,
+   "f1_macro": 0.43352332668294896,
+   "auroc_macro_ovr": 0.8444653017454531,
+   "mel_found": 6,
+   "mel_total": 8,
+   "mel_pred": 81,
+   "melanoma_recall": 0.75
+  },
+  "tau": 0.4,
+  "delta": 2.6,
+  "minutes": 17.06729744275411
+ },
+ {
+  "method": "satda",
+  "n": "100",
+  "seed": 42,
+  "report": {
+   "accuracy": 0.6086956521739131,
+   "f1_macro": 0.5195152695841164,
+   "auroc_macro_ovr": 0.8537785651994116,
+   "mel_found": 2,
+   "mel_total": 8,
+   "mel_pred": 14,
+   "melanoma_recall": 0.25
+  },
+  "safety": {
+   "accuracy": 0.5130434782608696,
+   "f1_macro": 0.4522262002262002,
+   "auroc_macro_ovr": 0.8623532966913865,
+   "mel_found": 7,
+   "mel_total": 8,
+   "mel_pred": 91,
+   "melanoma_recall": 0.875
+  },
+  "tau": 0.25,
+  "delta": 2.1,
+  "minutes": 15.478372951348623
+ },
+ {
+  "method": "satda",
+  "n": "100",
+  "seed": 456,
+  "report": {
+   "accuracy": 0.5739130434782609,
+   "f1_macro": 0.4938081879411289,
+   "auroc_macro_ovr": 0.8367729226103965,
+   "mel_found": 2,
+   "mel_total": 8,
+   "mel_pred": 12,
+   "melanoma_recall": 0.25
+  },
+  "safety": {
+   "accuracy": 0.5565217391304348,
+   "f1_macro": 0.45452683772860103,
+   "auroc_macro_ovr": 0.8522116109368116,
+   "mel_found": 5,
+   "mel_total": 8,
+   "mel_pred": 29,
+   "melanoma_recall": 0.625
+  },
+  "tau": 0.3,
+  "delta": 1.2,
+  "minutes": 15.870845842361451
+ },
+ {
+  "method": "satda",
+  "n": "100",
+  "seed": 789,
+  "report": {
+   "accuracy": 0.5855072463768116,
+   "f1_macro": 0.47690743542778213,
+   "auroc_macro_ovr": 0.8312343193627074,
+   "mel_found": 1,
+   "mel_total": 8,
+   "mel_pred": 5,
+   "melanoma_recall": 0.125
+  },
+  "safety": {
+   "accuracy": 0.5304347826086957,
+   "f1_macro": 0.46619985937931097,
+   "auroc_macro_ovr": 0.8279535726329421,
+   "mel_found": 5,
+   "mel_total": 8,
+   "mel_pred": 70,
+   "melanoma_recall": 0.625
+  },
+  "tau": 0.0,
+  "delta": 1.8,
+  "minutes": 15.513863337039947
+ },
+ {
+  "method": "satda",
+  "n": "200",
+  "seed": 1011,
+  "report": {
+   "accuracy": 0.6289855072463768,
+   "f1_macro": 0.5860632601455739,
+   "auroc_macro_ovr": 0.8652204314809918,
+   "mel_found": 5,
+   "mel_total": 8,
+   "mel_pred": 12,
+   "melanoma_recall": 0.625
+  },
+  "safety": {
+   "accuracy": 0.6463768115942029,
+   "f1_macro": 0.5879281575232279,
+   "auroc_macro_ovr": 0.8802212952546352,
+   "mel_found": 4,
+   "mel_total": 8,
+   "mel_pred": 14,
+   "melanoma_recall": 0.5
+  },
+  "tau": 0.4,
+  "delta": 1.1,
+  "minutes": 13.429800562063853
+ },
+ {
+  "method": "satda",
+  "n": "200",
+  "seed": 123,
+  "report": {
+   "accuracy": 0.6202898550724638,
+   "f1_macro": 0.6082248996759491,
+   "auroc_macro_ovr": 0.8573204779023567,
+   "mel_found": 6,
+   "mel_total": 8,
+   "mel_pred": 14,
+   "melanoma_recall": 0.75
+  },
+  "safety": {
+   "accuracy": 0.5072463768115942,
+   "f1_macro": 0.473119196478789,
+   "auroc_macro_ovr": 0.8537269272035477,
+   "mel_found": 6,
+   "mel_total": 8,
+   "mel_pred": 79,
+   "melanoma_recall": 0.75
+  },
+  "tau": 0.0,
+  "delta": 1.9,
+  "minutes": 16.68961350520452
+ },
+ {
+  "method": "satda",
+  "n": "200",
+  "seed": 42,
+  "report": {
+   "accuracy": 0.6289855072463768,
+   "f1_macro": 0.5830146986180132,
+   "auroc_macro_ovr": 0.8623039775744754,
+   "mel_found": 4,
+   "mel_total": 8,
+   "mel_pred": 11,
+   "melanoma_recall": 0.5
+  },
+  "safety": {
+   "accuracy": 0.5884057971014492,
+   "f1_macro": 0.5417250047787554,
+   "auroc_macro_ovr": 0.8623549624662136,
+   "mel_found": 6,
+   "mel_total": 8,
+   "mel_pred": 42,
+   "melanoma_recall": 0.75
+  },
+  "tau": 0.05,
+  "delta": 1.5,
+  "minutes": 21.119360641638437
+ },
+ {
+  "method": "satda",
+  "n": "200",
+  "seed": 456,
+  "report": {
+   "accuracy": 0.6115942028985507,
+   "f1_macro": 0.5626601737854007,
+   "auroc_macro_ovr": 0.8610530181221634,
+   "mel_found": 4,
+   "mel_total": 8,
+   "mel_pred": 19,
+   "melanoma_recall": 0.5
+  },
+  "safety": {
+   "accuracy": 0.5739130434782609,
+   "f1_macro": 0.5413983363282909,
+   "auroc_macro_ovr": 0.8566637254277236,
+   "mel_found": 6,
+   "mel_total": 8,
+   "mel_pred": 51,
+   "melanoma_recall": 0.75
+  },
+  "tau": 0.0,
+  "delta": 1.5,
+  "minutes": 14.577558700243632
+ },
+ {
+  "method": "satda",
+  "n": "200",
+  "seed": 789,
+  "report": {
+   "accuracy": 0.6260869565217392,
+   "f1_macro": 0.5593242756250947,
+   "auroc_macro_ovr": 0.8593250633500871,
+   "mel_found": 3,
+   "mel_total": 8,
+   "mel_pred": 9,
+   "melanoma_recall": 0.375
+  },
+  "safety": {
+   "accuracy": 0.6347826086956522,
+   "f1_macro": 0.5591408848551704,
+   "auroc_macro_ovr": 0.8649674363689911,
+   "mel_found": 3,
+   "mel_total": 8,
+   "mel_pred": 13,
+   "melanoma_recall": 0.375
+  },
+  "tau": 0.15,
+  "delta": 1.1,
+  "minutes": 18.304069447517396
+ },
+ {
+  "method": "satda",
+  "n": "50",
+  "seed": 1011,
+  "report": {
+   "accuracy": 0.5710144927536231,
+   "f1_macro": 0.4416650981868373,
+   "auroc_macro_ovr": 0.8081806155226007,
+   "mel_found": 1,
+   "mel_total": 8,
+   "mel_pred": 10,
+   "melanoma_recall": 0.125
+  },
+  "safety": {
+   "accuracy": 0.37681159420289856,
+   "f1_macro": 0.35115036622145623,
+   "auroc_macro_ovr": 0.7928247857594966,
+   "mel_found": 6,
+   "mel_total": 8,
+   "mel_pred": 156,
+   "melanoma_recall": 0.75
+  },
+  "tau": 0.0,
+  "delta": 2.5,
+  "minutes": 14.868097400665283
+ },
+ {
+  "method": "satda",
+  "n": "50",
+  "seed": 123,
+  "report": {
+   "accuracy": 0.5797101449275363,
+   "f1_macro": 0.4938850655790571,
+   "auroc_macro_ovr": 0.8447985657211975,
+   "mel_found": 3,
+   "mel_total": 8,
+   "mel_pred": 19,
+   "melanoma_recall": 0.375
+  },
+  "safety": {
+   "accuracy": 0.5623188405797102,
+   "f1_macro": 0.4663097675226571,
+   "auroc_macro_ovr": 0.8506175592667107,
+   "mel_found": 5,
+   "mel_total": 8,
+   "mel_pred": 37,
+   "melanoma_recall": 0.625
+  },
+  "tau": 0.25,
+  "delta": 1.2,
+  "minutes": 16.103855272134144
+ },
+ {
+  "method": "satda",
+  "n": "50",
+  "seed": 42,
+  "report": {
+   "accuracy": 0.5304347826086957,
+   "f1_macro": 0.42197952046968856,
+   "auroc_macro_ovr": 0.8113119684383638,
+   "mel_found": 1,
+   "mel_total": 8,
+   "mel_pred": 13,
+   "melanoma_recall": 0.125
+  },
+  "safety": {
+   "accuracy": 0.47246376811594204,
+   "f1_macro": 0.4097487973492946,
+   "auroc_macro_ovr": 0.8082510589401428,
+   "mel_found": 6,
+   "mel_total": 8,
+   "mel_pred": 68,
+   "melanoma_recall": 0.75
+  },
+  "tau": 0.0,
+  "delta": 1.6,
+  "minutes": 17.707815674940743
+ },
+ {
+  "method": "satda",
+  "n": "50",
+  "seed": 456,
+  "report": {
+   "accuracy": 0.5246376811594203,
+   "f1_macro": 0.45504300305059314,
+   "auroc_macro_ovr": 0.8165601881570194,
+   "mel_found": 2,
+   "mel_total": 8,
+   "mel_pred": 18,
+   "melanoma_recall": 0.25
+  },
+  "safety": {
+   "accuracy": 0.5362318840579711,
+   "f1_macro": 0.463290712550397,
+   "auroc_macro_ovr": 0.8249248401933198,
+   "mel_found": 3,
+   "mel_total": 8,
+   "mel_pred": 15,
+   "melanoma_recall": 0.375
+  },
+  "tau": 0.3,
+  "delta": 0.6,
+  "minutes": 14.307540309429168
+ },
+ {
+  "method": "satda",
+  "n": "50",
+  "seed": 789,
+  "report": {
+   "accuracy": 0.5362318840579711,
+   "f1_macro": 0.46918663761801016,
+   "auroc_macro_ovr": 0.8101571555936443,
+   "mel_found": 3,
+   "mel_total": 8,
+   "mel_pred": 12,
+   "melanoma_recall": 0.375
+  },
+  "safety": {
+   "accuracy": 0.5072463768115942,
+   "f1_macro": 0.4348248193983221,
+   "auroc_macro_ovr": 0.8083691305477796,
+   "mel_found": 4,
+   "mel_total": 8,
+   "mel_pred": 50,
+   "melanoma_recall": 0.5
+  },
+  "tau": 0.0,
+  "delta": 1.0,
+  "minutes": 15.86001193523407
+ },
+ {
+  "method": "satda",
+  "n": "full",
+  "seed": 1011,
+  "report": {
+   "accuracy": 0.7159420289855073,
+   "f1_macro": 0.7110261537108755,
+   "auroc_macro_ovr": 0.9196648410833088,
+   "mel_found": 6,
+   "mel_total": 8,
+   "mel_pred": 10,
+   "melanoma_recall": 0.75
+  },
+  "safety": {
+   "accuracy": 0.7043478260869566,
+   "f1_macro": 0.6642997504708584,
+   "auroc_macro_ovr": 0.9234933053511805,
+   "mel_found": 7,
+   "mel_total": 8,
+   "mel_pred": 23,
+   "melanoma_recall": 0.875
+  },
+  "tau": 0.3,
+  "delta": 1.8,
+  "minutes": 15.625247152646383
+ },
+ {
+  "method": "satda",
+  "n": "full",
+  "seed": 123,
+  "report": {
+   "accuracy": 0.6608695652173913,
+   "f1_macro": 0.6372285349331209,
+   "auroc_macro_ovr": 0.9078072611309809,
+   "mel_found": 8,
+   "mel_total": 8,
+   "mel_pred": 19,
+   "melanoma_recall": 1.0
+  },
+  "safety": {
+   "accuracy": 0.6405797101449275,
+   "f1_macro": 0.5940530977549858,
+   "auroc_macro_ovr": 0.9044209012300571,
+   "mel_found": 8,
+   "mel_total": 8,
+   "mel_pred": 34,
+   "melanoma_recall": 1.0
+  },
+  "tau": 0.0,
+  "delta": 0.8,
+  "minutes": 23.80567139784495
+ },
+ {
+  "method": "satda",
+  "n": "full",
+  "seed": 42,
+  "report": {
+   "accuracy": 0.736231884057971,
+   "f1_macro": 0.7555696807697639,
+   "auroc_macro_ovr": 0.9286902159885011,
+   "mel_found": 7,
+   "mel_total": 8,
+   "mel_pred": 9,
+   "melanoma_recall": 0.875
+  },
+  "safety": {
+   "accuracy": 0.6608695652173913,
+   "f1_macro": 0.6220204217633165,
+   "auroc_macro_ovr": 0.9243851664334478,
+   "mel_found": 8,
+   "mel_total": 8,
+   "mel_pred": 48,
+   "melanoma_recall": 1.0
+  },
+  "tau": 0.05,
+  "delta": 2.0,
+  "minutes": 23.373905646800996
+ },
+ {
+  "method": "satda",
+  "n": "full",
+  "seed": 456,
+  "report": {
+   "accuracy": 0.7130434782608696,
+   "f1_macro": 0.7174999027944307,
+   "auroc_macro_ovr": 0.9267252505799988,
+   "mel_found": 5,
+   "mel_total": 8,
+   "mel_pred": 6,
+   "melanoma_recall": 0.625
+  },
+  "safety": {
+   "accuracy": 0.6956521739130435,
+   "f1_macro": 0.6498761245245726,
+   "auroc_macro_ovr": 0.9286140467261349,
+   "mel_found": 8,
+   "mel_total": 8,
+   "mel_pred": 26,
+   "melanoma_recall": 1.0
+  },
+  "tau": 0.4,
+  "delta": 2.5,
+  "minutes": 19.93902975320816
+ },
+ {
+  "method": "satda",
+  "n": "full",
+  "seed": 789,
+  "report": {
+   "accuracy": 0.7101449275362319,
+   "f1_macro": 0.7011269549729245,
+   "auroc_macro_ovr": 0.9242620381206368,
+   "mel_found": 6,
+   "mel_total": 8,
+   "mel_pred": 10,
+   "melanoma_recall": 0.75
+  },
+  "safety": {
+   "accuracy": 0.7130434782608696,
+   "f1_macro": 0.6992012496484736,
+   "auroc_macro_ovr": 0.930256525170947,
+   "mel_found": 7,
+   "mel_total": 8,
+   "mel_pred": 15,
+   "melanoma_recall": 0.875
+  },
+  "tau": 0.5,
+  "delta": 1.5,
+  "minutes": 18.862277340888976
+ },
+ {
+  "method": "sup",
+  "n": "100",
+  "seed": 1011,
+  "report": {
+   "accuracy": 0.5826086956521739,
+   "f1_macro": 0.42191174071455756,
+   "auroc_macro_ovr": 0.7718474736515122,
+   "mel_found": 0,
+   "mel_total": 8,
+   "mel_pred": 3,
+   "melanoma_recall": 0.0
+  },
+  "safety": {
+   "accuracy": 0.32753623188405795,
+   "f1_macro": 0.20560671225590338,
+   "auroc_macro_ovr": 0.7635435035068376,
+   "mel_found": 5,
+   "mel_total": 8,
+   "mel_pred": 178,
+   "melanoma_recall": 0.625
+  },
+  "tau": 0.0,
+  "delta": 1.3,
+  "minutes": 2.013565746943156
+ },
+ {
+  "method": "sup",
+  "n": "100",
+  "seed": 123,
+  "report": {
+   "accuracy": 0.5797101449275363,
+   "f1_macro": 0.4472697577945922,
+   "auroc_macro_ovr": 0.760485808899496,
+   "mel_found": 1,
+   "mel_total": 8,
+   "mel_pred": 2,
+   "melanoma_recall": 0.125
+  },
+  "safety": {
+   "accuracy": 0.3101449275362319,
+   "f1_macro": 0.21135479242920946,
+   "auroc_macro_ovr": 0.7443275397865987,
+   "mel_found": 7,
+   "mel_total": 8,
+   "mel_pred": 194,
+   "melanoma_recall": 0.875
+  },
+  "tau": 0.0,
+  "delta": 1.3,
+  "minutes": 2.013324765364329
+ },
+ {
+  "method": "sup",
+  "n": "100",
+  "seed": 42,
+  "report": {
+   "accuracy": 0.5565217391304348,
+   "f1_macro": 0.4072580133247242,
+   "auroc_macro_ovr": 0.7436000706757517,
+   "mel_found": 0,
+   "mel_total": 8,
+   "mel_pred": 8,
+   "melanoma_recall": 0.0
+  },
+  "safety": {
+   "accuracy": 0.2898550724637681,
+   "f1_macro": 0.1928905123522061,
+   "auroc_macro_ovr": 0.7272696008324385,
+   "mel_found": 7,
+   "mel_total": 8,
+   "mel_pred": 194,
+   "melanoma_recall": 0.875
+  },
+  "tau": 0.1,
+  "delta": 1.8,
+  "minutes": 2.1923484722773234
+ },
+ {
+  "method": "sup",
+  "n": "100",
+  "seed": 456,
+  "report": {
+   "accuracy": 0.5594202898550724,
+   "f1_macro": 0.4014752598095622,
+   "auroc_macro_ovr": 0.757951516279654,
+   "mel_found": 0,
+   "mel_total": 8,
+   "mel_pred": 2,
+   "melanoma_recall": 0.0
+  },
+  "safety": {
+   "accuracy": 0.3391304347826087,
+   "f1_macro": 0.22701496111143307,
+   "auroc_macro_ovr": 0.7458792955938461,
+   "mel_found": 6,
+   "mel_total": 8,
+   "mel_pred": 175,
+   "melanoma_recall": 0.75
+  },
+  "tau": 0.0,
+  "delta": 1.4,
+  "minutes": 2.2370294094085694
+ },
+ {
+  "method": "sup",
+  "n": "100",
+  "seed": 789,
+  "report": {
+   "accuracy": 0.5710144927536231,
+   "f1_macro": 0.41104605390257126,
+   "auroc_macro_ovr": 0.7584290578018442,
+   "mel_found": 1,
+   "mel_total": 8,
+   "mel_pred": 8,
+   "melanoma_recall": 0.125
+  },
+  "safety": {
+   "accuracy": 0.2144927536231884,
+   "f1_macro": 0.16048486556961133,
+   "auroc_macro_ovr": 0.7321959055142389,
+   "mel_found": 7,
+   "mel_total": 8,
+   "mel_pred": 251,
+   "melanoma_recall": 0.875
+  },
+  "tau": 0.15,
+  "delta": 2.4,
+  "minutes": 2.4401773810386658
+ },
+ {
+  "method": "sup",
+  "n": "200",
+  "seed": 1011,
+  "report": {
+   "accuracy": 0.6434782608695652,
+   "f1_macro": 0.47906019608635964,
+   "auroc_macro_ovr": 0.8566626210350277,
+   "mel_found": 0,
+   "mel_total": 8,
+   "mel_pred": 0,
+   "melanoma_recall": 0.0
+  },
+  "safety": {
+   "accuracy": 0.527536231884058,
+   "f1_macro": 0.296900045469081,
+   "auroc_macro_ovr": 0.8543325526095762,
+   "mel_found": 7,
+   "mel_total": 8,
+   "mel_pred": 85,
+   "melanoma_recall": 0.875
+  },
+  "tau": 0.5,
+  "delta": 3.0,
+  "minutes": 2.6555365959803265
+ },
+ {
+  "method": "sup",
+  "n": "200",
+  "seed": 123,
+  "report": {
+   "accuracy": 0.6579710144927536,
+   "f1_macro": 0.5021894129262551,
+   "auroc_macro_ovr": 0.8506843287077496,
+   "mel_found": 0,
+   "mel_total": 8,
+   "mel_pred": 1,
+   "melanoma_recall": 0.0
+  },
+  "safety": {
+   "accuracy": 0.4405797101449275,
+   "f1_macro": 0.2729197782472008,
+   "auroc_macro_ovr": 0.8522211002563255,
+   "mel_found": 7,
+   "mel_total": 8,
+   "mel_pred": 137,
+   "melanoma_recall": 0.875
+  },
+  "tau": 0.25,
+  "delta": 2.7,
+  "minutes": 3.5566460410753886
+ },
+ {
+  "method": "sup",
+  "n": "200",
+  "seed": 42,
+  "report": {
+   "accuracy": 0.6260869565217392,
+   "f1_macro": 0.4824103486547514,
+   "auroc_macro_ovr": 0.8344701628316307,
+   "mel_found": 0,
+   "mel_total": 8,
+   "mel_pred": 0,
+   "melanoma_recall": 0.0
+  },
+  "safety": {
+   "accuracy": 0.48405797101449277,
+   "f1_macro": 0.2953532167625793,
+   "auroc_macro_ovr": 0.8321282170232891,
+   "mel_found": 7,
+   "mel_total": 8,
+   "mel_pred": 100,
+   "melanoma_recall": 0.875
+  },
+  "tau": 0.1,
+  "delta": 1.7,
+  "minutes": 2.6805304924647015
+ },
+ {
+  "method": "sup",
+  "n": "200",
+  "seed": 456,
+  "report": {
+   "accuracy": 0.6695652173913044,
+   "f1_macro": 0.5004412526958846,
+   "auroc_macro_ovr": 0.8378689245316867,
+   "mel_found": 0,
+   "mel_total": 8,
+   "mel_pred": 0,
+   "melanoma_recall": 0.0
+  },
+  "safety": {
+   "accuracy": 0.553623188405797,
+   "f1_macro": 0.30302721665817917,
+   "auroc_macro_ovr": 0.8406129333392288,
+   "mel_found": 5,
+   "mel_total": 8,
+   "mel_pred": 78,
+   "melanoma_recall": 0.625
+  },
+  "tau": 0.45,
+  "delta": 2.8,
+  "minutes": 3.227926977475484
+ },
+ {
+  "method": "sup",
+  "n": "200",
+  "seed": 789,
+  "report": {
+   "accuracy": 0.6695652173913044,
+   "f1_macro": 0.4998066190785204,
+   "auroc_macro_ovr": 0.8450374009871041,
+   "mel_found": 0,
+   "mel_total": 8,
+   "mel_pred": 0,
+   "melanoma_recall": 0.0
+  },
+  "safety": {
+   "accuracy": 0.45507246376811594,
+   "f1_macro": 0.26463962103059846,
+   "auroc_macro_ovr": 0.8398626690084047,
+   "mel_found": 6,
+   "mel_total": 8,
+   "mel_pred": 118,
+   "melanoma_recall": 0.75
+  },
+  "tau": 0.35,
+  "delta": 3.0,
+  "minutes": 3.5600760618845624
+ },
+ {
+  "method": "sup",
+  "n": "50",
+  "seed": 1011,
+  "report": {
+   "accuracy": 0.48405797101449277,
+   "f1_macro": 0.33646180868743303,
+   "auroc_macro_ovr": 0.6808750620566285,
+   "mel_found": 0,
+   "mel_total": 8,
+   "mel_pred": 8,
+   "melanoma_recall": 0.0
+  },
+  "safety": {
+   "accuracy": 0.30144927536231886,
+   "f1_macro": 0.23658938182428102,
+   "auroc_macro_ovr": 0.6756853290649425,
+   "mel_found": 5,
+   "mel_total": 8,
+   "mel_pred": 183,
+   "melanoma_recall": 0.625
+  },
+  "tau": 0.0,
+  "delta": 0.7,
+  "minutes": 1.9051988045374553
+ },
+ {
+  "method": "sup",
+  "n": "50",
+  "seed": 123,
+  "report": {
+   "accuracy": 0.48985507246376814,
+   "f1_macro": 0.3734990899345244,
+   "auroc_macro_ovr": 0.6721748885819336,
+   "mel_found": 1,
+   "mel_total": 8,
+   "mel_pred": 8,
+   "melanoma_recall": 0.125
+  },
+  "safety": {
+   "accuracy": 0.22608695652173913,
+   "f1_macro": 0.15469151274784818,
+   "auroc_macro_ovr": 0.675149751402488,
+   "mel_found": 7,
+   "mel_total": 8,
+   "mel_pred": 227,
+   "melanoma_recall": 0.875
+  },
+  "tau": 0.5,
+  "delta": 2.7,
+  "minutes": 2.8288405656814577
+ },
+ {
+  "method": "sup",
+  "n": "50",
+  "seed": 42,
+  "report": {
+   "accuracy": 0.45217391304347826,
+   "f1_macro": 0.3406558250830697,
+   "auroc_macro_ovr": 0.6735236768128577,
+   "mel_found": 0,
+   "mel_total": 8,
+   "mel_pred": 12,
+   "melanoma_recall": 0.0
+  },
+  "safety": {
+   "accuracy": 0.2144927536231884,
+   "f1_macro": 0.15924846000173962,
+   "auroc_macro_ovr": 0.6637986894253024,
+   "mel_found": 7,
+   "mel_total": 8,
+   "mel_pred": 219,
+   "melanoma_recall": 0.875
+  },
+  "tau": 0.0,
+  "delta": 0.9,
+  "minutes": 2.7073577284812926
+ },
+ {
+  "method": "sup",
+  "n": "50",
+  "seed": 456,
+  "report": {
+   "accuracy": 0.47246376811594204,
+   "f1_macro": 0.35062264442883373,
+   "auroc_macro_ovr": 0.6341727970643349,
+   "mel_found": 0,
+   "mel_total": 8,
+   "mel_pred": 3,
+   "melanoma_recall": 0.0
+  },
+  "safety": {
+   "accuracy": 0.2956521739130435,
+   "f1_macro": 0.21205776446552807,
+   "auroc_macro_ovr": 0.6257741858400753,
+   "mel_found": 3,
+   "mel_total": 8,
+   "mel_pred": 172,
+   "melanoma_recall": 0.375
+  },
+  "tau": 0.05,
+  "delta": 0.9,
+  "minutes": 2.8224068840344745
+ },
+ {
+  "method": "sup",
+  "n": "50",
+  "seed": 789,
+  "report": {
+   "accuracy": 0.5043478260869565,
+   "f1_macro": 0.39154651226344195,
+   "auroc_macro_ovr": 0.6782176593990082,
+   "mel_found": 2,
+   "mel_total": 8,
+   "mel_pred": 9,
+   "melanoma_recall": 0.25
+  },
+  "safety": {
+   "accuracy": 0.30144927536231886,
+   "f1_macro": 0.2096879444041965,
+   "auroc_macro_ovr": 0.6689099263546598,
+   "mel_found": 7,
+   "mel_total": 8,
+   "mel_pred": 194,
+   "melanoma_recall": 0.875
+  },
+  "tau": 0.05,
+  "delta": 0.9,
+  "minutes": 2.114009674390157
+ },
+ {
+  "method": "sup",
+  "n": "full",
+  "seed": 1011,
+  "report": {
+   "accuracy": 0.7739130434782608,
+   "f1_macro": 0.7863914852111156,
+   "auroc_macro_ovr": 0.948463424033904,
+   "mel_found": 7,
+   "mel_total": 8,
+   "mel_pred": 9,
+   "melanoma_recall": 0.875
+  },
+  "safety": {
+   "accuracy": 0.7565217391304347,
+   "f1_macro": 0.7215982568119443,
+   "auroc_macro_ovr": 0.9466303272998277,
+   "mel_found": 8,
+   "mel_total": 8,
+   "mel_pred": 23,
+   "melanoma_recall": 1.0
+  },
+  "tau": 0.05,
+  "delta": 2.8,
+  "minutes": 16.799766711393993
+ },
+ {
+  "method": "sup",
+  "n": "full",
+  "seed": 123,
+  "report": {
+   "accuracy": 0.7681159420289855,
+   "f1_macro": 0.7105151247036379,
+   "auroc_macro_ovr": 0.9479216083120038,
+   "mel_found": 3,
+   "mel_total": 8,
+   "mel_pred": 5,
+   "melanoma_recall": 0.375
+  },
+  "safety": {
+   "accuracy": 0.744927536231884,
+   "f1_macro": 0.6782804697173803,
+   "auroc_macro_ovr": 0.9468043217758686,
+   "mel_found": 7,
+   "mel_total": 8,
+   "mel_pred": 22,
+   "melanoma_recall": 0.875
+  },
+  "tau": 0.1,
+  "delta": 2.8,
+  "minutes": 21.010469841957093
+ },
+ {
+  "method": "sup",
+  "n": "full",
+  "seed": 42,
+  "report": {
+   "accuracy": 0.782608695652174,
+   "f1_macro": 0.7764372469635628,
+   "auroc_macro_ovr": 0.9503256985615461,
+   "mel_found": 6,
+   "mel_total": 8,
+   "mel_pred": 8,
+   "melanoma_recall": 0.75
+  },
+  "safety": {
+   "accuracy": 0.7797101449275362,
+   "f1_macro": 0.7586964813510988,
+   "auroc_macro_ovr": 0.9501869061241809,
+   "mel_found": 5,
+   "mel_total": 8,
+   "mel_pred": 7,
+   "melanoma_recall": 0.625
+  },
+  "tau": 0.5,
+  "delta": 0.6,
+  "minutes": 14.66636860370636
+ },
+ {
+  "method": "sup",
+  "n": "full",
+  "seed": 456,
+  "report": {
+   "accuracy": 0.7797101449275362,
+   "f1_macro": 0.7647542561882107,
+   "auroc_macro_ovr": 0.9450101587782775,
+   "mel_found": 5,
+   "mel_total": 8,
+   "mel_pred": 6,
+   "melanoma_recall": 0.625
+  },
+  "safety": {
+   "accuracy": 0.7623188405797101,
+   "f1_macro": 0.71081340181866,
+   "auroc_macro_ovr": 0.942810410623167,
+   "mel_found": 7,
+   "mel_total": 8,
+   "mel_pred": 22,
+   "melanoma_recall": 0.875
+  },
+  "tau": 0.0,
+  "delta": 2.9,
+  "minutes": 20.309930527210234
+ },
+ {
+  "method": "sup",
+  "n": "full",
+  "seed": 789,
+  "report": {
+   "accuracy": 0.7710144927536232,
+   "f1_macro": 0.7586245708222406,
+   "auroc_macro_ovr": 0.9429041575445923,
+   "mel_found": 5,
+   "mel_total": 8,
+   "mel_pred": 6,
+   "melanoma_recall": 0.625
+  },
+  "safety": {
+   "accuracy": 0.7623188405797101,
+   "f1_macro": 0.7408185392472653,
+   "auroc_macro_ovr": 0.9446417216036227,
+   "mel_found": 8,
+   "mel_total": 8,
+   "mel_pred": 18,
+   "melanoma_recall": 1.0
+  },
+  "tau": 0.4,
+  "delta": 2.8,
+  "minutes": 17.253037309646608
+ }
+]

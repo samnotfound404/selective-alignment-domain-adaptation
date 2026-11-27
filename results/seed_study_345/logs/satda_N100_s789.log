@@ -1,0 +1,215 @@
+======================================================================
+DATASET STRATIFICATION VERIFICATION:
+  Source Train: 8294 | Val: 1464 | Test: 1433
+  Target Full:  1608 | Val: 345 | Held-Out Test: 345
+  Target Subset N=200: {'BCC': 74, 'MEL': 4, 'NV': 21, 'AKIEC': 80, 'BKL': 21}
+  Target Subset N=100: {'BCC': 37, 'MEL': 2, 'NV': 10, 'AKIEC': 40, 'BKL': 11}
+  Target Subset N= 50: {'BCC': 18, 'MEL': 1, 'NV': 5, 'AKIEC': 20, 'BKL': 6}
+======================================================================
+=== satda N=100 (100) seed=789 on cuda:1 backbone=b2@288
+Traceback (most recent call last):
+  File "<repo>/seed_study_345/run_study.py", line 265, in <module>
+    main()
+  File "<repo>/seed_study_345/run_study.py", line 247, in main
+    model, best_ep = train_da(args.method, ds["src_train"], tgt_items, val_loader, device)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/seed_study_345/run_study.py", line 171, in train_da
+    s_lg, t_lg, fw = model(si, ti)
+                     ^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/extras/benchmarks/run_ultra_low_resource_study.py", line 389, in forward
+    target_features = self.feature_extractor(target_images)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/extras/benchmarks/run_ultra_low_resource_study.py", line 278, in forward
+    feat = self.features(x)
+           ^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torchvision/models/efficientnet.py", line 165, in forward
+    result = self.block(input)
+             ^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/activation.py", line 472, in forward
+    return F.silu(input, inplace=self.inplace)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/functional.py", line 2394, in silu
+    return torch._C._nn.silu_(input)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.00 MiB. GPU 1 has a total capacity of 14.62 GiB of which 3.12 MiB is free. Process 261132 has 5.65 GiB memory in use. Process 265116 has 4.43 GiB memory in use. Including non-PyTorch memory, this process has 4.52 GiB memory in use. Of the allocated memory 4.24 GiB is allocated by PyTorch, and 209.06 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+======================================================================
+DATASET STRATIFICATION VERIFICATION:
+  Source Train: 8294 | Val: 1464 | Test: 1433
+  Target Full:  1608 | Val: 345 | Held-Out Test: 345
+  Target Subset N=200: {'BCC': 74, 'MEL': 4, 'NV': 21, 'AKIEC': 80, 'BKL': 21}
+  Target Subset N=100: {'BCC': 37, 'MEL': 2, 'NV': 10, 'AKIEC': 40, 'BKL': 11}
+  Target Subset N= 50: {'BCC': 18, 'MEL': 1, 'NV': 5, 'AKIEC': 20, 'BKL': 6}
+======================================================================
+=== satda N=100 (100) seed=789 on cuda:2 backbone=b2@288
+Traceback (most recent call last):
+  File "<repo>/seed_study_345/run_study.py", line 265, in <module>
+    main()
+  File "<repo>/seed_study_345/run_study.py", line 247, in main
+    model, best_ep = train_da(args.method, ds["src_train"], tgt_items, val_loader, device)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/seed_study_345/run_study.py", line 171, in train_da
+    s_lg, t_lg, fw = model(si, ti)
+                     ^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/extras/benchmarks/run_ultra_low_resource_study.py", line 389, in forward
+    target_features = self.feature_extractor(target_images)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/extras/benchmarks/run_ultra_low_resource_study.py", line 278, in forward
+    feat = self.features(x)
+           ^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torchvision/models/efficientnet.py", line 165, in forward
+    result = self.block(input)
+             ^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/conv.py", line 553, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/conv.py", line 548, in _conv_forward
+    return F.conv2d(
+           ^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 62.00 MiB. GPU 2 has a total capacity of 14.62 GiB of which 13.12 MiB is free. Process 271403 has 5.65 GiB memory in use. Process 273269 has 5.17 GiB memory in use. Including non-PyTorch memory, this process has 3.77 GiB memory in use. Of the allocated memory 3.51 GiB is allocated by PyTorch, and 185.40 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+======================================================================
+DATASET STRATIFICATION VERIFICATION:
+  Source Train: 8294 | Val: 1464 | Test: 1433
+  Target Full:  1608 | Val: 345 | Held-Out Test: 345
+  Target Subset N=200: {'BCC': 74, 'MEL': 4, 'NV': 21, 'AKIEC': 80, 'BKL': 21}
+  Target Subset N=100: {'BCC': 37, 'MEL': 2, 'NV': 10, 'AKIEC': 40, 'BKL': 11}
+  Target Subset N= 50: {'BCC': 18, 'MEL': 1, 'NV': 5, 'AKIEC': 20, 'BKL': 6}
+======================================================================
+=== satda N=100 (100) seed=789 on cuda:3 backbone=b2@288
+  ep  1 val acc=0.5043 f1=0.4178 mel=1/8 (best ep 1)
+  ep  2 val acc=0.6174 f1=0.5233 mel=2/8 (best ep 2)
+  ep  3 val acc=0.6116 f1=0.5428 mel=3/8 (best ep 3)
+  ep  4 val acc=0.6232 f1=0.5954 mel=4/8 (best ep 4)
+  ep  5 val acc=0.6377 f1=0.5542 mel=3/8 (best ep 4)
+  ep  6 val acc=0.6203 f1=0.5207 mel=2/8 (best ep 4)
+  ep  7 val acc=0.6261 f1=0.5526 mel=3/8 (best ep 4)
+  ep  8 val acc=0.6087 f1=0.5195 mel=3/8 (best ep 4)
+  ep  9 val acc=0.6174 f1=0.5522 mel=3/8 (best ep 4)
+  ep 10 val acc=0.6174 f1=0.5428 mel=4/8 (best ep 4)
+  ep 11 val acc=0.6174 f1=0.5400 mel=4/8 (best ep 4)
+  ep 12 val acc=0.6087 f1=0.5321 mel=4/8 (best ep 4)
+  ep 13 val acc=0.6203 f1=0.5546 mel=4/8 (best ep 4)
+  ep 14 val acc=0.6058 f1=0.5275 mel=3/8 (best ep 4)
+  ep 15 val acc=0.6348 f1=0.5561 mel=4/8 (best ep 4)
+  TEST raw: {'accuracy': 0.5855072463768116, 'f1_macro': 0.47690743542778213, 'auroc_macro_ovr': 0.8312343193627074, 'mel_found': 1, 'mel_total': 8, 'mel_pred': 5, 'melanoma_recall': 0.125}
+  TEST report-style: {'accuracy': 0.5855072463768116, 'f1_macro': 0.47690743542778213, 'auroc_macro_ovr': 0.8312343193627074, 'mel_found': 1, 'mel_total': 8, 'mel_pred': 5, 'melanoma_recall': 0.125}
+  saved <repo>/seed_study_345/results/satda_N100_s789.json in 931s

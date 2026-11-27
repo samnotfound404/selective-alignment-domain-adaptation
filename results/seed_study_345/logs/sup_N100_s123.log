@@ -1,0 +1,20 @@
+======================================================================
+DATASET STRATIFICATION VERIFICATION:
+  Source Train: 8294 | Val: 1464 | Test: 1433
+  Target Full:  1608 | Val: 345 | Held-Out Test: 345
+  Target Subset N=200: {'BCC': 74, 'MEL': 4, 'NV': 21, 'AKIEC': 80, 'BKL': 21}
+  Target Subset N=100: {'BCC': 37, 'MEL': 2, 'NV': 10, 'AKIEC': 40, 'BKL': 11}
+  Target Subset N= 50: {'BCC': 18, 'MEL': 1, 'NV': 5, 'AKIEC': 20, 'BKL': 6}
+======================================================================
+=== sup N=100 (100) seed=123 on cuda:3 backbone=b0@224
+  ep  2 val acc=0.3478 f1=0.2525 (best 0.2525)
+  ep  4 val acc=0.4986 f1=0.2986 (best 0.2986)
+  ep  6 val acc=0.5391 f1=0.3377 (best 0.3377)
+  ep  8 val acc=0.5536 f1=0.3470 (best 0.3470)
+  ep 10 val acc=0.5623 f1=0.3519 (best 0.3519)
+  ep 12 val acc=0.5565 f1=0.3499 (best 0.3519)
+  ep 14 val acc=0.5710 f1=0.3525 (best 0.3525)
+  ep 15 val acc=0.5826 f1=0.3736 (best 0.3736)
+  TEST raw: {'accuracy': 0.5797101449275363, 'f1_macro': 0.4472697577945922, 'auroc_macro_ovr': 0.760485808899496, 'mel_found': 1, 'mel_total': 8, 'mel_pred': 2, 'melanoma_recall': 0.125}
+  TEST report-style: {'accuracy': 0.5797101449275363, 'f1_macro': 0.4472697577945922, 'auroc_macro_ovr': 0.760485808899496, 'mel_found': 1, 'mel_total': 8, 'mel_pred': 2, 'melanoma_recall': 0.125}
+  saved <repo>/seed_study_345/results/sup_N100_s123.json in 121s

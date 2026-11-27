@@ -1,0 +1,7 @@
+N=full: train=1474 val=316 test=316
+N=full: train=1474 val=316 test=316
+[N=full seed=42] acc=0.7816 f1=0.6456 auroc=0.9458 mel=0.125 bcc=0.835
+[N=full seed=123] acc=0.7753 f1=0.6662 auroc=0.9524 mel=0.250 bcc=0.835
+[N=full seed=456] acc=0.7943 f1=0.7515 auroc=0.9528 mel=0.625 bcc=0.850
+[N=full seed=789] acc=0.7943 f1=0.7369 auroc=0.9501 mel=0.500 bcc=0.827
+[N=full seed=1011] acc=0.7785 f1=0.6746 auroc=0.9532 mel=0.250 bcc=0.843

@@ -1,0 +1,21 @@
+\begin{tabular}{@{}l l c c c c@{}}
+\toprule
+$N$ & \textbf{Method} & \textbf{Accuracy (\%)} & \textbf{Macro F1} & \textbf{AUROC} & \makecell{\textbf{MEL found}\\ \textbf{(of 8)}} \\
+\midrule
+\multirow{3}{*}{50} & Target-only supervised & \pmstd{48.1}{1.8} & \pmstd{0.359}{0.021} & \pmstd{0.668}{0.017} & \pmstd{0.6}{0.8} \\
+ & SAT-DA & \pmstd{54.8}{2.2} & \pmstd{0.456}{0.024} & \pmstd{0.818}{0.014} & \best{\pmstd{2.0}{0.9}} \\
+ & \textbf{CC-SAT-DA (ours)} & \best{\pmstd{58.1}{1.2}} & \best{\pmstd{0.486}{0.032}} & \best{\pmstd{0.835}{0.008}} & \pmstd{1.6}{1.0} \\
+\midrule
+\multirow{3}{*}{100} & Target-only supervised & \pmstd{57.0}{1.0} & \pmstd{0.418}{0.016} & \pmstd{0.758}{0.009} & \pmstd{0.4}{0.5} \\
+ & SAT-DA & \pmstd{58.3}{1.5} & \pmstd{0.492}{0.017} & \pmstd{0.834}{0.011} & \pmstd{2.2}{0.7} \\
+ & \textbf{CC-SAT-DA (ours)} & \best{\pmstd{60.3}{1.2}} & \best{\pmstd{0.543}{0.022}} & \best{\pmstd{0.857}{0.008}} & \best{\pmstd{3.0}{0.6}} \\
+\midrule
+\multirow{3}{*}{200} & Target-only supervised & \pmstd{65.3}{1.7} & \pmstd{0.493}{0.010} & \pmstd{0.845}{0.008} & \pmstd{0.0}{0.0} \\
+ & SAT-DA & \pmstd{62.3}{0.7} & \pmstd{0.580}{0.018} & \pmstd{0.861}{0.003} & \best{\pmstd{4.4}{1.0}} \\
+ & \textbf{CC-SAT-DA (ours)} & \best{\pmstd{67.2}{0.5}} & \best{\pmstd{0.641}{0.022}} & \best{\pmstd{0.885}{0.005}} & \pmstd{3.8}{1.3} \\
+\midrule
+\multirow{3}{*}{1,608} & Target-only supervised & \best{\pmstd{77.5}{0.5}} & \best{\pmstd{0.759}{0.026}} & \best{\pmstd{0.947}{0.003}} & \pmstd{5.2}{1.3} \\
+ & SAT-DA & \pmstd{70.7}{2.5} & \pmstd{0.704}{0.038} & \pmstd{0.921}{0.007} & \pmstd{6.4}{1.0} \\
+ & \textbf{CC-SAT-DA (ours)} & \pmstd{73.2}{1.3} & \pmstd{0.750}{0.013} & \pmstd{0.937}{0.002} & \best{\pmstd{6.6}{0.8}} \\
+\bottomrule
+\end{tabular}

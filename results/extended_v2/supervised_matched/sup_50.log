@@ -1,0 +1,7 @@
+N=50: train=50 val=316 test=316
+N=50: train=50 val=316 test=316
+[N=50 seed=42] acc=0.6392 f1=0.4584 auroc=0.7593 mel=0.000 bcc=0.732
+[N=50 seed=123] acc=0.6203 f1=0.4565 auroc=0.7620 mel=0.000 bcc=0.669
+[N=50 seed=456] acc=0.6013 f1=0.4403 auroc=0.7462 mel=0.000 bcc=0.701
+[N=50 seed=789] acc=0.6139 f1=0.4496 auroc=0.7368 mel=0.000 bcc=0.646
+[N=50 seed=1011] acc=0.6013 f1=0.4343 auroc=0.7325 mel=0.000 bcc=0.701

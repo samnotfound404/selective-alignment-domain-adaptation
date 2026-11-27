@@ -1,0 +1,121 @@
+======================================================================
+DATASET STRATIFICATION VERIFICATION:
+  Source Train: 8294 | Val: 1464 | Test: 1433
+  Target Full:  1608 | Val: 345 | Held-Out Test: 345
+  Target Subset N=200: {'BCC': 74, 'MEL': 4, 'NV': 21, 'AKIEC': 80, 'BKL': 21}
+  Target Subset N=100: {'BCC': 37, 'MEL': 2, 'NV': 10, 'AKIEC': 40, 'BKL': 11}
+  Target Subset N= 50: {'BCC': 18, 'MEL': 1, 'NV': 5, 'AKIEC': 20, 'BKL': 6}
+======================================================================
+=== satda N=200 (200) seed=456 on cuda:0 backbone=b2@288
+Traceback (most recent call last):
+  File "<repo>/seed_study_345/run_study.py", line 265, in <module>
+    main()
+  File "<repo>/seed_study_345/run_study.py", line 247, in main
+    model, best_ep = train_da(args.method, ds["src_train"], tgt_items, val_loader, device)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/seed_study_345/run_study.py", line 171, in train_da
+    s_lg, t_lg, fw = model(si, ti)
+                     ^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/extras/benchmarks/run_ultra_low_resource_study.py", line 389, in forward
+    target_features = self.feature_extractor(target_images)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/extras/benchmarks/run_ultra_low_resource_study.py", line 278, in forward
+    feat = self.features(x)
+           ^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torchvision/models/efficientnet.py", line 165, in forward
+    result = self.block(input)
+             ^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/modules/batchnorm.py", line 194, in forward
+    return F.batch_norm(
+           ^^^^^^^^^^^^^
+  File "~/anaconda3/lib/python3.12/site-packages/torch/nn/functional.py", line 2846, in batch_norm
+    return torch.batch_norm(
+           ^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 24.00 MiB. GPU 0 has a total capacity of 14.62 GiB of which 13.12 MiB is free. Process 258705 has 5.63 GiB memory in use. Process 259508 has 4.84 GiB memory in use. Including non-PyTorch memory, this process has 4.12 GiB memory in use. Of the allocated memory 3.85 GiB is allocated by PyTorch, and 198.42 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+======================================================================
+DATASET STRATIFICATION VERIFICATION:
+  Source Train: 8294 | Val: 1464 | Test: 1433
+  Target Full:  1608 | Val: 345 | Held-Out Test: 345
+  Target Subset N=200: {'BCC': 74, 'MEL': 4, 'NV': 21, 'AKIEC': 80, 'BKL': 21}
+  Target Subset N=100: {'BCC': 37, 'MEL': 2, 'NV': 10, 'AKIEC': 40, 'BKL': 11}
+  Target Subset N= 50: {'BCC': 18, 'MEL': 1, 'NV': 5, 'AKIEC': 20, 'BKL': 6}
+======================================================================
+=== satda N=200 (200) seed=456 on cuda:0 backbone=b2@288
+  ep  1 val acc=0.5565 f1=0.4488 mel=2/8 (best ep 1)
+  ep  2 val acc=0.5971 f1=0.5123 mel=5/8 (best ep 2)
+  ep  3 val acc=0.6174 f1=0.5212 mel=2/8 (best ep 3)
+  ep  4 val acc=0.6377 f1=0.5671 mel=4/8 (best ep 4)
+  ep  5 val acc=0.6638 f1=0.5842 mel=3/8 (best ep 5)
+  ep  6 val acc=0.6783 f1=0.6082 mel=4/8 (best ep 6)
+  ep  7 val acc=0.6087 f1=0.5516 mel=5/8 (best ep 6)
+  ep  8 val acc=0.6783 f1=0.6160 mel=4/8 (best ep 8)
+  ep  9 val acc=0.6464 f1=0.5509 mel=2/8 (best ep 8)
+  ep 10 val acc=0.6841 f1=0.6203 mel=4/8 (best ep 10)
+  ep 11 val acc=0.6609 f1=0.5960 mel=4/8 (best ep 10)
+  ep 12 val acc=0.6580 f1=0.5897 mel=4/8 (best ep 10)
+  ep 13 val acc=0.6725 f1=0.6084 mel=4/8 (best ep 10)
+  ep 14 val acc=0.6725 f1=0.6060 mel=4/8 (best ep 10)
+  ep 15 val acc=0.6754 f1=0.6094 mel=4/8 (best ep 10)
+  TEST raw: {'accuracy': 0.6115942028985507, 'f1_macro': 0.5626601737854007, 'auroc_macro_ovr': 0.8610530181221634, 'mel_found': 4, 'mel_total': 8, 'mel_pred': 19, 'melanoma_recall': 0.5}
+  TEST report-style: {'accuracy': 0.6115942028985507, 'f1_macro': 0.5626601737854007, 'auroc_macro_ovr': 0.8610530181221634, 'mel_found': 4, 'mel_total': 8, 'mel_pred': 19, 'melanoma_recall': 0.5}
+  saved <repo>/seed_study_345/results/satda_N200_s456.json in 875s

@@ -1,0 +1,7 @@
+N=200: train=200 val=316 test=316
+N=200: train=200 val=316 test=316
+[N=200 seed=42] acc=0.7278 f1=0.5406 auroc=0.8909 mel=0.000 bcc=0.795
+[N=200 seed=123] acc=0.7057 f1=0.5629 auroc=0.8917 mel=0.125 bcc=0.764
+[N=200 seed=456] acc=0.7278 f1=0.5497 auroc=0.9056 mel=0.000 bcc=0.795
+[N=200 seed=789] acc=0.7184 f1=0.5901 auroc=0.9031 mel=0.125 bcc=0.780
+[N=200 seed=1011] acc=0.7342 f1=0.5616 auroc=0.9002 mel=0.000 bcc=0.772

@@ -1,0 +1,27 @@
+======================================================================
+DATASET STRATIFICATION VERIFICATION:
+  Source Train: 8294 | Val: 1464 | Test: 1433
+  Target Full:  1608 | Val: 345 | Held-Out Test: 345
+  Target Subset N=200: {'BCC': 74, 'MEL': 4, 'NV': 21, 'AKIEC': 80, 'BKL': 21}
+  Target Subset N=100: {'BCC': 37, 'MEL': 2, 'NV': 10, 'AKIEC': 40, 'BKL': 11}
+  Target Subset N= 50: {'BCC': 18, 'MEL': 1, 'NV': 5, 'AKIEC': 20, 'BKL': 6}
+======================================================================
+=== satda N=200 (200) seed=42 on cuda:1 backbone=b2@288
+  ep  1 val acc=0.5826 f1=0.4921 mel=4/8 (best ep 1)
+  ep  2 val acc=0.6435 f1=0.5492 mel=4/8 (best ep 2)
+  ep  3 val acc=0.6464 f1=0.5661 mel=5/8 (best ep 3)
+  ep  4 val acc=0.6464 f1=0.5798 mel=5/8 (best ep 4)
+  ep  5 val acc=0.6725 f1=0.5921 mel=3/8 (best ep 5)
+  ep  6 val acc=0.6406 f1=0.5859 mel=5/8 (best ep 5)
+  ep  7 val acc=0.6522 f1=0.5757 mel=3/8 (best ep 5)
+  ep  8 val acc=0.6899 f1=0.5932 mel=2/8 (best ep 8)
+  ep  9 val acc=0.6783 f1=0.5953 mel=3/8 (best ep 9)
+  ep 10 val acc=0.6841 f1=0.5827 mel=2/8 (best ep 9)
+  ep 11 val acc=0.6812 f1=0.5818 mel=2/8 (best ep 9)
+  ep 12 val acc=0.6783 f1=0.5779 mel=2/8 (best ep 9)
+  ep 13 val acc=0.6609 f1=0.5518 mel=1/8 (best ep 9)
+  ep 14 val acc=0.6667 f1=0.5727 mel=2/8 (best ep 9)
+  ep 15 val acc=0.6638 f1=0.5716 mel=2/8 (best ep 9)
+  TEST raw: {'accuracy': 0.6289855072463768, 'f1_macro': 0.5830146986180132, 'auroc_macro_ovr': 0.8623039775744754, 'mel_found': 4, 'mel_total': 8, 'mel_pred': 11, 'melanoma_recall': 0.5}
+  TEST report-style: {'accuracy': 0.6289855072463768, 'f1_macro': 0.5830146986180132, 'auroc_macro_ovr': 0.8623039775744754, 'mel_found': 4, 'mel_total': 8, 'mel_pred': 11, 'melanoma_recall': 0.5}
+  saved <repo>/seed_study_345/results/satda_N200_s42.json in 1267s
